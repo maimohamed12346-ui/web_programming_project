@@ -1,4 +1,4 @@
-// ===== Form Validation =====
+//  Form Validation 
 function validateForm(event) {
     event.preventDefault();
     
@@ -78,7 +78,7 @@ function showSuccess() {
     }, 5000);
 }
 
-// ===== Dark Mode Toggle =====
+//  Dark Mode Toggle 
 function toggleDarkMode() {
     const body = document.body;
     const icon = document.getElementById('darkModeIcon');
@@ -105,7 +105,7 @@ function loadDarkMode() {
     }
 }
 
-// ===== Smooth Scroll =====
+//  Smooth Scroll 
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -132,7 +132,7 @@ function initSmoothScroll() {
     });
 }
 
-// ===== Progress Bar Animation =====
+//  Progress Bar Animation 
 function animateProgressBars() {
     const progressBars = document.querySelectorAll('.progress-animate');
     
@@ -146,7 +146,7 @@ function animateProgressBars() {
     });
 }
 
-// ===== Initialize Everything =====
+//  Initialize Everything 
 document.addEventListener('DOMContentLoaded', function() {
     // Form validation
     const contactForm = document.getElementById('contactForm');
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ===== Dark Mode CSS =====
+//  Dark Mode CSS 
 const darkModeCSS = `
     .dark-mode {
         background-color: #121212;
@@ -249,4 +249,5 @@ const darkModeCSS = `
 // Inject dark mode CSS
 const style = document.createElement('style');
 style.textContent = darkModeCSS;
+
 document.head.appendChild(style);
